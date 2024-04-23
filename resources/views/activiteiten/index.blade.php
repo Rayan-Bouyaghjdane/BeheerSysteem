@@ -12,9 +12,9 @@
     <h1 class="Title">Tabel met alles van activiteiten</h1>
 
     <ul>
-        @foreach ($activiteiten as $activiteit)
-            <table class="Table">
-                <thead class="TableTitles">
+        @foreach ($activiteiten as $act)
+            <table>
+                <thead>
                     <tr>
                         <th>Activiteit</th>
                         {{-- <th>Omschrijving</th> --}}
@@ -24,18 +24,20 @@
                         {{-- <th>Updated</th> --}}
                     </tr>
                 </thead>
-                <tbody class="TableBody">
+                <tbody>
                     <tr>
-                        <td>{{ $activiteit->activiteit }}</td>
-                        {{-- <td>{{ $activiteit->omschrijving }}</td> --}}
-                        <td>{{ $activiteit->kortomschrijving }}</td>
-                        <td>{{ $activiteit->eigenaar }}</td>
-                        {{-- <td>{{ $activiteit->created_at }}</td> --}}
-                        {{-- <td>{{ $activiteit->updated_at }}</td> --}}
+                        <td>{{ $act->activiteit }}</td>
+                        {{-- <td>{{ $act->omschrijving }}</td> --}}
+                        <td>{{ $act->kortomschrijving }}</td>
+                        <td>{{ $act->eigenaar }}</td>
+                        {{-- <td>{{ $act->created_at }}</td> --}}
+                        {{-- <td>{{ $act->updated_at }}</td> --}}
                     </tr>
             </table>
+            {{-- <?php var_dump($act); ?> --}}
         @endforeach
     </ul>
+
 </body>
 
 </html>

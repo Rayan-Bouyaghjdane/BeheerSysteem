@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class activiteiten extends Model
+class Activiteiten extends Model
 {
     use HasFactory;
 
@@ -13,7 +13,16 @@ class activiteiten extends Model
     protected $fillable = ['omschrijving', 'kortomschrijving', 'eigenaar', 'created_at', 'updated_at'];
 
     protected $primaryKey = 'activiteit';
-}
+    protected $keyType = 'string';
 
-// Met foreign key in de tabel
-// protected $fillable = ['omschrijving', 'kortomschrijving', 'eigenaar', 'created_at', 'updated_at'];
+
+    public function reserveringen()
+    {
+        return $this->hasMany(Reserveringen::class);
+    }
+
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
+}
