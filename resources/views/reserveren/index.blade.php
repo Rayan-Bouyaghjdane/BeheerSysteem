@@ -4,16 +4,16 @@
 <h2 style="text-align: center;">Reserveren</h2>
 
 @if(session('success'))
-        <div class="alert alert-success" style="text-align: centeter;">
+        <div class="alert alert-success" id="melding">
             {{ session('success') }}
         </div>
     @endif
 
-<div class="container" style="text-align: center;">
+<div class="container">
   <div class="row">
     <form action="{{route('reserveren.store')}}" method="post">
       @csrf
-        <label for="activiteit">Activiteit:</label>
+        <label for="activiteit">Activiteit:</label> <br>
         <select name="activiteit" id="activiteit">
           <option value="">Selecteer een activiteit</option>
           @foreach($activiteiten as $ac)
@@ -21,17 +21,17 @@
           @endforeach
         </select>  <br>
          
-        <label for="dagvandeweek">Dag van de week:</label>
-        <input type="text" name="dagvandeweek" id="dagvandeweek" readonly>
+        <label for="dagvandeweek">Dag van de week:</label> <br>
+        <input type="text" name="dagvandeweek" id="dagvandeweek" readonly class="dagvandeweek" class="dagvandetijd">
 
         <br>
-        <label for="Tijd">Tijd:</label>
-        <input type="text" name="begintijd" id="begintijd" readonly> tot <input type="text" name="eindtijd" id="eindtijd" readonly> <br>
+        <label for="Tijd">Tijd:</label> <br>
+        <input type="text" name="begintijd" id="begintijd" readonly class="tijd"> tot <input type="text" name="eindtijd" id="eindtijd" readonly class="tijd"> <br>
 
-      <label for="datum">Datum:</label>
+      <label for="datum">Datum:</label> <br>
       <input type="date" name="datum" id="datum"> <br>
 
-      <label for="aantallaptops">Aantallaptops:</label>
+      <label for="aantallaptops">Aantallaptops:</label> <br>
       <input type="number" name="aantallaptops" min="1" max="20"> <br>
 
       <button type="submit">reservering aanmaken</button>
