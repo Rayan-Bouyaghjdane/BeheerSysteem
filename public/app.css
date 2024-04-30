@@ -1,0 +1,175 @@
+body {
+	margin: 0;
+	font-family: "Arial", sans-serif;
+}
+
+header {
+	background-color: #ffffff;
+	color: #000000;
+	padding: 15px;
+	text-align: center;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 2px solid #ddd;
+}
+
+.logo {
+	background-color: #fff;
+	padding: 5px;
+	border: 1px solid #ffffa4;
+}
+
+.logo img {
+	max-width: 100px;
+}
+
+.site-name {
+	flex-grow: 1;
+}
+
+.site-name h1 {
+	margin: 0;
+}
+
+nav {
+	background-color: #000000;
+	padding: 1px;
+}
+
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #fff;
+	display: flex;
+	justify-content: space-around;
+	border: 1px solid #000;
+	border-radius: 5px;
+}
+
+nav li a {
+	display: block;
+	color: #000;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+nav li a:hover:not(.active) {
+	background-color: #3c3535;
+	color: #f6f6f6;
+}
+
+.centered-container {
+	text-align: center;
+}
+
+.centered-image img {
+	max-width: 80%;
+	/* Yanlardan küçültme */
+	max-height: 80%;
+	/* Yukarıdan ve aşağıdan küçültme */
+	display: block;
+	margin: 0 auto;
+}
+
+.overlay-text {
+	background-color: #ffffff;
+	/* Açık mavi arka plan rengi */
+	color: #000;
+	/* Siyah yazı rengi */
+	padding: 20px;
+	border-radius: 10px;
+	/* Köşeleri yuvarlama */
+	width: 80%;
+	/* Yanlardan küçültme */
+	margin: 20px auto;
+	/* Metni ve kutuyu ortalamak */
+}
+
+.dropdown {
+	display: inline-block;
+}
+
+.dropdown-content {
+    
+	display: none;
+	position: absolute;
+	background-color: #fff;
+	/* Arka plan rengi */
+	/* min-width: 160px; */
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	z-index: 1;
+}
+
+.dropdown-content a {
+	color: #000;
+	padding: 12px 21px;
+	display: block;
+	text-decoration: none;
+}
+
+.dropdown-content a:hover {
+	background-color: #f6f6f6;
+	/* Hover durumunda arka plan rengi */
+	color: #000;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+/* Diğer stiller burada */
+
+.content-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 20px;
+	flex-direction: column;
+	margin-top: 30px;
+}
+
+.left-section {
+	overflow: hidden;
+	width: 50%;
+	margin-right: 20px;
+}
+
+.left-section img {
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+}
+
+.right-section {
+	width: 50%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+
+	flex-wrap: nowrap;
+}
+
+.overlay-text {
+	text-align: center;
+	margin-bottom: 20px;
+	font-size: large;
+}
+
+.right-image {
+	border-radius: 50%;
+	overflow: hidden;
+	flex-grow: 1;
+}
+
+.right-image img {
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+}
+
+

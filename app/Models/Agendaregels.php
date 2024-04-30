@@ -13,7 +13,8 @@ class Agendaregels extends Model
     protected $fillable = ['dagvandeweek', 'begintijd', 'eindtijd', 'website', 'created_at', 'updated_at'];
 
     protected $primaryKey = ['activiteit', 'datum', 'ruimte'];
-    protected $keyType = 'string';
+    protected $keyType = 'array';
+    public $incrementing = false;
 
     public function dagvandeweek()
     {
