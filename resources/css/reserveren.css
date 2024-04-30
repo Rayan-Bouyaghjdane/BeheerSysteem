@@ -1,9 +1,3 @@
-body{
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-style: italic;
-}
-
 .succes-message{
 
     position: absolute;
@@ -24,24 +18,24 @@ body{
 
 .table{
     width: 100%;
+    inset: 0 0 0 0;
+    margin-top: 5%;
 }
 
-.table tr:hover {background-color: #ddd;}
+/* .table tr:hover {
+    background-color: #a7a7a7;
+} */
 
 .table td{
     border: 1px solid #ddd;
     padding: 10px;
-    text-align: center;
+    text-align: center !important;
 }
 
 .table th{
     border: 1px solid #5a5a5a;
     padding: 10px;
     background-color: #d3d3d3;
-}
-
-.title{
-    text-decoration: underline;
     text-align: center;
 }
 
@@ -59,4 +53,18 @@ body{
 .button-update:hover{
     background-color: #45a049;
     color: white;
+}
+
+.drop-down{
+    background-color: #7979793a;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+}
+
+.drop-down:hover{
+    background-color: #aaaaaa3a;
 }

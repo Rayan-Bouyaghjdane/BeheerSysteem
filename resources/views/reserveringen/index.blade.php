@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+@include('includes.header')
 
 <head>
     <meta charset="UTF-8">
@@ -25,7 +26,6 @@
             <p>{{ session()->get('success') }}</p>
         </div>
     @endif
-    <h1 class="title">Alle reserveringen die beoordeeld moeten worden</h1>
 
     <table class="table">
         <thead>
@@ -52,7 +52,7 @@
                         <td>{{ $res->dagvandeweek }}</td>
                         <td>{{ $res->aantallaptops }}</td>
                         <td>
-                            <select name="status" id="">
+                            <select name="status" class="drop-down">
                                 @foreach ($statusreserveringen as $status)
                                     <option @selected(!empty(old('status')) ? old('status') == $status->status : $res->status == $status->status) value="{{ $status->status }}">
                                         {{ $status->status }}</option>
