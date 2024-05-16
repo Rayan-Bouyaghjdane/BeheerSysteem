@@ -46,4 +46,10 @@ class ReserverenController extends Controller
       return redirect()->route('reserveren.index')->with('success', 'De reservering is succesvol aangemaakt!');
     }
 
+    public function reservering()
+    {
+      $reserveringen = Reserveringen::all();
+      return view('reserveren.reservering', ['reserveringen' => $reserveringen]);
+    }
+
 }

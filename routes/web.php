@@ -16,3 +16,4 @@ Route::put('/reserveringen/{reserveringen}', [ReserveringenController::class, 'u
 
 Route::get('/reserveren', [ReserverenController::class, 'index'])->name('reserveren.index');
 Route::post('/reserveren/store', [ReserverenController::class, 'store'])->name('reserveren.store');
+

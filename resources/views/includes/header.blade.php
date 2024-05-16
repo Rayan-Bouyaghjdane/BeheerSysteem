@@ -23,25 +23,4 @@
         </div>
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="/">Home</a></li>
-            <li class="dropdown">
-                <a href="#" class="dropbtn">Computers</a>
-                <div class="dropdown-content">
-                    <a href="#scherm1">Scherm 1</a>
-                    <a href="#scherm2">Scherm 2</a>
-                    <a href="#scherm3">Scherm 3</a>
-                    <a href="#scherm4">Scherm 4</a>
-                    <a href="#scherm5">Scherm 5</a>
-                    <a href="#scherm6">Scherm 6</a>
-                    <a href="#scherm7">Scherm 7</a>
-                    <a href="#scherm8">Scherm 8</a>
-                </div>
-            </li>
 
-            <li><a href="/reserveren">Reserveren</a></li>
-            <li><a href="/reserveringen">Beoordelen</a></li>
-            <li><a href="#register">Register</a></li>
-        </ul>
-    </nav>

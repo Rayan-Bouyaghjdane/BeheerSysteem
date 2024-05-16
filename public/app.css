@@ -253,3 +253,77 @@ button[tupe=submit]:hover{
 #melding{
 	text-align: center;
 }
+
+
+
+/* Overzicht van reserveringenformulier*/
+.succes-message{
+
+    position: absolute;
+    inset: 0 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    p {
+        display: block;
+        background-color: #00FF00;
+        color: #000;
+        padding: 10px;
+        border-radius: 5px;
+        font-size: 1.5rem;
+    }
+}
+
+.table{
+    width: 100%;
+    inset: 0 0 0 0;
+    margin-top: 5%;
+}
+
+/* .table tr:hover {
+    background-color: #a7a7a7;
+} */
+
+.table td{
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center !important;
+}
+
+.table th{
+    border: 1px solid #5a5a5a;
+    padding: 10px;
+    background-color: #d3d3d3;
+    text-align: center;
+}
+
+.button-update{
+    background-color: #45a049ab;
+    border: none;
+    border-radius: 12px;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+}
+
+.button-update:hover{
+    background-color: #45a049;
+    color: white;
+}
+
+.drop-down{
+    background-color: #7979793a;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+}
+
+.drop-down:hover{
+    background-color: #aaaaaa3a;
+}
