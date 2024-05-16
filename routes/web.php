@@ -23,6 +23,7 @@ Route::get('/reserveren', [ReserverenController::class, 'index'])->name('reserve
 Route::post('/reserveren/store', [ReserverenController::class, 'store'])->name('reserveren.store');
 
 
+
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
