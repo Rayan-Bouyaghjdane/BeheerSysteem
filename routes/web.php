@@ -12,3 +12,4 @@ Route::get('/activiteiten', [ActiviteitenController::class, 'index']);
 
 Route::get('/reserveren', [ReserverenController::class, 'index'])->name('reserveren.index');
 Route::post('/reserveren/store', [ReserverenController::class, 'store'])->name('reserveren.store');
+Route::get('/reservering', [ReserverenController::class, 'reservering']);

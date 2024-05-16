@@ -39,7 +39,6 @@
 				</li>
 
 				<li><a href="/reserveren">Reserveren</a></li>
-				<li><a href="#inloggen">Inloggen</a></li>
-				<li><a href="#register">Register</a></li>
+				<li><a href="/reservering">Mijn reserveringen</a></li>
 			</ul>
 		</nav>
